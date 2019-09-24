@@ -1,29 +1,6 @@
-<!-- Toolbar -->
-<mat-toolbar color="primary" class="header">
-    <div>Nombre del paciente</div>
-    <mat-icon (click)="sidenav.toggle()" class="hamburger">dashboard</mat-icon>
-</mat-toolbar>
-
-<mat-sidenav-container>
-    <!-- Sidenav -->
-    <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
-        [fixedTopGap]>
-        <mat-form-field>
-                <mat-label>Estudio</mat-label>
-                <mat-select>
-                  <mat-option *ngFor="let study of studies" [value]="study.value">
-                    {{study.viewValue}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
-        <mat-nav-list>
-            <a mat-list-item>
-                <mat-icon>dashboard</mat-icon> Serie 1
-            </a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <!-- Main content -->
-    <mat-sidenav-content>
-        <app-viewer></app-viewer>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+<div id="info">
+    <h1>Informacion de uso</h1>
+    <p>Para acceder al visualizador se debe poseer un token valido</p>
+    <p>La url de acceso es http://dominio.com/patient/token</p>
+</div>
+<router-outlet></router-outlet>
