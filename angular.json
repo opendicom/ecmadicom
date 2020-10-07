@@ -30,7 +30,14 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+                "node_modules/cornerstone-core/dist/cornerstone.js",
+                "node_modules/cornerstone-math/dist/cornerstoneMath.js",
+                "node_modules/cornerstone-tools/dist/cornerstoneTools.js",
+                "node_modules/dicom-parser/dist/dicomParser.js",
+                "node_modules/cornerstone-wado-image-loader/dist/cornerstoneWADOImageLoader.js",
+                "node_modules/cornerstone-web-image-loader/dist/cornerstoneWebImageLoader.js"
+              ],
             "es5BrowserSupport": true
           },
           "configurations": {
